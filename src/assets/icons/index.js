@@ -1,11 +1,6 @@
-import GroupIconSVG from "./group.js";
 import GroupOutlineIconSVG from "./group_outline.js";
 import LogoIconSVG from "./logo.js";
 import UserIconSVG from "./user.js";
-
-export function GroupIcon(props) {
-  return <GroupIconSVG {...props} />;
-}
 
 export function GroupOutlineIcon(props) {
   return <GroupOutlineIconSVG {...props} />;
