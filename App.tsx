@@ -8,9 +8,8 @@ import {
 import theme from "./src/config/theme/index.js";
 import {Loading} from "@components/Loading";
 
-import {Groups} from "@screens/Groups";
 import {StatusBar} from "react-native";
-import {NewGroup} from "@screens/NewGroup";
+import {Routes} from "./src/routes/";
 
 export default function App() {
   const [fontsLoaded] = useFonts({Roboto_400Regular, Roboto_700Bold});
@@ -22,7 +21,7 @@ export default function App() {
         backgroundColor="transparent"
         translucent
       />
-      {fontsLoaded ? <NewGroup /> : <Loading />}
+      {fontsLoaded ? <Routes /> : <Loading />}
     </ThemeProvider>
   );
 }
