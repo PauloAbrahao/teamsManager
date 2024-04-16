@@ -43,3 +43,12 @@ export type PlayerCardProps = {
   name: string;
   onRemove: () => void;
 };
+
+export type PlayersRouteParams = {
+  group: string;
+};
+
+export type PlayerStorageDTO = {
+  name: string;
+  team: string;
+};

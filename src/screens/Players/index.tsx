@@ -4,7 +4,6 @@ import {useRoute, useNavigation} from "@react-navigation/native";
 
 import {AppError} from "@utils/AppError";
 
-import {PlayerStorageDTO} from "@storage/player/PlayerStorageDTO";
 import {playerAddByGroup} from "@storage/player/playerAddByGroup";
 import {playersGetByGroupAndTeam} from "@storage/player/playersGetByGroupAndTeam";
 import {playerRemoveByGroup} from "@storage/player/playerRemoveByGroup";
@@ -21,10 +20,7 @@ import {ListEmpty} from "@components/ListEmpty";
 import {Button} from "@components/Button";
 
 import {Container, Form, HeaderList, NumberOfPlayers} from "./styles";
-
-type RouteParams = {
-  group: string;
-};
+import { PlayersRouteParams, PlayerStorageDTO} from "src/@types";
 
 export function Players() {
   const [isLoading, setIsLoading] = useState(true);
@@ -35,7 +31,7 @@ export function Players() {
   const navigation = useNavigation();
   const route = useRoute();
 
-  const {group} = route.params as RouteParams;
+  const {group} = route.params as PlayersRouteParams;
 
   const newPlayerNameInputRef = useRef<TextInput>(null);
 
@@ -179,7 +175,7 @@ export function Players() {
       )}
 
       <Button
-        title="Remover Turma"
+        title="Remover turma"
         type="SECONDARY"
         onPress={handleGroupRemove}
       />

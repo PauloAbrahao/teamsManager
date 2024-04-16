@@ -3,7 +3,7 @@ import {AppError} from "@utils/AppError";
 
 import {PLAYER_COLLECTION} from "@storage/storageConfig";
 
-import {PlayerStorageDTO} from "./PlayerStorageDTO";
+import {PlayerStorageDTO} from "src/@types"
 import {playersGetByGroup} from "./playersGetByGroup";
 
 export async function playerAddByGroup(
