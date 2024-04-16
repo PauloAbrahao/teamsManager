@@ -1,10 +1,7 @@
+import {ListEmptyProps} from "src/@types";
 import {Container, Message} from "./styles";
 
-type Props = {
-  message: string;
-};
-
-export const ListEmpty = ({ message }: Props) => {
+export const ListEmpty = ({message}: ListEmptyProps) => {
   return (
     <Container>
       <Message>{message}</Message>

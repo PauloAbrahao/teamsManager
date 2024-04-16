@@ -1,13 +1,9 @@
 import {ButtonIcon} from "@components/ButtonIcon";
 
 import {Container, Icon, Name} from "./styles";
+import {PlayerCardProps} from "src/@types";
 
-type Props = {
-  name: string;
-  onRemove: () => void;
-};
-
-export const PlayerCard = ({name, onRemove}: Props) => {
+export const PlayerCard = ({name, onRemove}: PlayerCardProps) => {
   return (
     <Container>
       <Icon name="person" />

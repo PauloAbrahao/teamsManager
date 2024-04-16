@@ -1,12 +1,9 @@
 import {LogoIcon} from "@assets/icons";
 import {BackIcon, BackButton, Container} from "./styles";
 import {useNavigation} from "@react-navigation/native";
+import {HeaderProps} from "src/@types";
 
-type Props = {
-  showBackButton?: boolean;
-};
-
-export const Header = ({showBackButton = false}: Props) => {
+export const Header = ({showBackButton = false}: HeaderProps) => {
   const navigation = useNavigation();
 
   function handleGoBack() {

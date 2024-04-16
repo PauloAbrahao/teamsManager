@@ -1,11 +1,7 @@
+import { HighLightProps } from "src/@types";
 import {Container, Subtitle, Title} from "./styles";
 
-type Props = {
-  title: string;
-  subtitle: string;
-};
-
-export const Highlight = ({title, subtitle}: Props) => {
+export const Highlight = ({title, subtitle}: HighLightProps) => {
   return (
     <Container>
       <Title>{title}</Title>
