@@ -13,4 +13,5 @@
 ### Techs
 - React Native
 - Typescript
+- Styled Components
 - Async Storage
