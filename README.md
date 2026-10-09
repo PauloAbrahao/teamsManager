@@ -1,7 +1,7 @@
 ## 💻 Teams Manager 
 
 ### Objective:
-- An app created to manage classes, which allows adding or removing people from the class, as well as adding or removing groups as well.
+- An app created to manage classes, which allows adding or removing people from the class, as well as adding or removing groups
 
 ### See the project...
 <p align="center">
